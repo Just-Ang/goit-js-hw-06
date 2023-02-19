@@ -11,4 +11,8 @@ inputEL.addEventListener('input', (event) => {
 
 
     outputEl.textContent = event.currentTarget.value;
+
+    if (outputEl.textContent.length === 0 ) {
+        outputEl.textContent = 'Anonymous';
+    }
 } )
