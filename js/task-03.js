@@ -17,11 +17,13 @@ const list = document.querySelector(".gallery");
 
 console.log(list);
 
-const elements = images.map((image) => `<li class="photo-item"> <img class="img" src = "${image.url}" alt="${image.alt}"> </li>`).join("");
+const elements = images
+  .map(
+    (image) =>
+      `<li class="photo-item"> <img class="img" src = "${image.url}" alt="${image.alt}"> </li>`
+  )
+  .join("");
 
 console.log(elements);
 
-
-list.insertAdjacentHTML('beforebegin', elements);
-
-
+list.insertAdjacentHTML("beforebegin", elements);
